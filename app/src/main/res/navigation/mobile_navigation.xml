@@ -3,18 +3,15 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/navigation_accepted">
-
+    app:startDestination="@id/navigation_accepted">
     <fragment
         android:id="@+id/navigation_accepted"
-        android:name="com.example.protectscreenshot.ui.accepted_view.AcceptedFragment"
-        android:label="@string/title_accepted"
-        tools:layout="@layout/fragment_home" />
-
+        android:name="com.example.protectscreenshot.AcceptedFragment"
+        android:label="fragment_accepted"
+        tools:layout="@layout/fragment_accepted" />
     <fragment
         android:id="@+id/navigation_protected"
-        android:name="com.example.protectscreenshot.ui.protected_view.ProtectedFragment"
-        android:label="@string/title_protected"
-        tools:layout="@layout/fragment_dashboard" />
-
+        android:name="com.example.protectscreenshot.ProtectedFragment"
+        android:label="fragment_protected"
+        tools:layout="@layout/fragment_protected" />
 </navigation>
