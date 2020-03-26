@@ -25,3 +25,4 @@
    >     getActivity().getWindow().setFlags(WindowManager.LayoutParams.FLAG_SECURE, WindowManager.LayoutParams.FLAG_SECURE); <br>
    >     return inflater.inflate(R.layout.fragment_protected, container, false); <br>
    > } <br>
+* ちなみにFactoryメソッド内での設定が必要かと思ったのでテンプレートのFragment実装を自前の物に置き換えはしたが、結局不要だった
