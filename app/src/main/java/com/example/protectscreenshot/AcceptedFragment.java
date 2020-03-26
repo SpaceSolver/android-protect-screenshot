@@ -7,6 +7,8 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.WindowManager;
+import android.widget.LinearLayout;
 
 
 /**
@@ -59,6 +61,9 @@ public class AcceptedFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
+
+        // to accept screen shot, set 0 to "mask" parameter.
+        getActivity().getWindow().setFlags(WindowManager.LayoutParams.FLAG_SECURE, 0);
         return inflater.inflate(R.layout.fragment_accepted, container, false);
     }
 }
